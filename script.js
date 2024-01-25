@@ -7,7 +7,7 @@ document.getElementById("btn").addEventListener("click" , display());
 function display(){
 	return new Promise((resolve,reject) => {
 		setTimeout(() => {
-			if(age>=18){
+			if(age>18){
 				resolve(`Welcome, ${name}. You can vote.`);
 			}
 			else{
@@ -20,4 +20,3 @@ function display(){
 display().then((data) => {
 	alert(data);
 }).catch((err) => alert(err));
-	
